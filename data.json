@@ -1,0 +1,78 @@
+{
+  "round1": [
+    {
+      "name": "romashka",
+      "label": "Ромашка",
+      "img": "images/round1/flower-1.png"
+    },
+    {
+      "name": "chrisantema",
+      "label": "Хризантема",
+      "img": "images/round1/flower-2.png"
+    },
+    {
+      "name": "chrisantema",
+      "label": "Хризантема",
+      "img": "images/round1/flower-3.png"
+    },
+    {
+      "name": "chrisantema",
+      "label": "Хризантема",
+      "img": "images/round1/flower-4.png"
+    }
+  ],
+  "round2": [
+    {
+      "name": "eustoma",
+      "label": "Эустома",
+      "img": "images/round2/flower-1.png"
+    },
+    {
+      "name": "eustoma",
+      "label": "Эустома",
+      "img": "images/round2/flower-2.png"
+    },
+    {
+      "name": "eustoma",
+      "label": "Эустома",
+      "img": "images/round2/flower-3.png"
+    },
+    {
+      "name": "rose",
+      "label": "Роза",
+      "img": "images/round2/flower-4.png"
+    },
+    {
+      "name": "eustoma",
+      "label": "Эустома",
+      "img": "images/round2/flower-5.png"
+    },
+    {
+      "name": "eustoma",
+      "label": "Эустома",
+      "img": "images/round2/flower-6.png"
+    }
+  ],
+  "round3": [
+    {
+      "name": "kamelia",
+      "label": "Камелия",
+      "img": "images/round3/flower-1.png"
+    },
+    {
+      "name": "kamelia",
+      "label": "Камелия",
+      "img": "images/round3/flower-2.png"
+    },
+    {
+      "name": "pion",
+      "label": "Пион",
+      "img": "images/round3/flower-3.png"
+    },
+    {
+      "name": "kamelia",
+      "label": "Камелия",
+      "img": "images/round3/flower-4.png"
+    }
+  ]
+}
