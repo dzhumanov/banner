@@ -130,7 +130,6 @@ body {
     color: #fff;
     text-align: center;
     text-overflow: ellipsis;
-    margin: 25px 0 36px;
   }
 
   .flowerBlock-wrapper {
@@ -294,7 +293,7 @@ body {
   }
 
   .modal-title {
-    margin: 0 !important;
+    margin: 0 auto !important;
   }
 
   .modal-title.error {
