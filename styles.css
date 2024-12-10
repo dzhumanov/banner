@@ -276,6 +276,7 @@
   border-bottom-left-radius: 0;
   border: 1px solid #fff;
   backdrop-filter: blur(20.432100296020508px);
+  -webkit-backdrop-filter: blur(20.432100296020508px);
   z-index: 10;
 
   .icon {
