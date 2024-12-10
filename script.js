@@ -186,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
   roundEl.textContent = "1/3";
 
   const nextRound = () => {
+    document.querySelectorAll(".flower-name").forEach((el) => el.remove());
     if (round === 3) {
       const link = document.createElement("a");
       link.id = "click_area";
@@ -220,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const tryAgain = () => {
+    document.querySelectorAll(".flower-name").forEach((el) => el.remove());
     modal.classList.remove("show", "success", "error");
     modalBackdrop.classList.remove("show");
     modalTitle.classList.remove("error");
