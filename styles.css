@@ -182,18 +182,22 @@
       .flower-1 {
         top: 5%;
         left: 5%;
+        animation: spin 7s linear infinite;
       }
       .flower-2 {
         top: 7%;
         right: 0;
+        animation: spin 10s linear infinite;
       }
       .flower-3 {
         bottom: 7%;
         left: 5%;
+        animation: spin 13s linear infinite;
       }
       .flower-4 {
         bottom: 5%;
         right: 5%;
+        animation: spin 8s linear infinite;
       }
     }
 
