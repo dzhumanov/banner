@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
   const roundEl = document.querySelector(".round");
   const focus = document.querySelector(".focus");
+  const flowerName = document.querySelector(".flower-name");
   const wrapper = document.querySelector(".flower-wrapper");
   const modal = document.querySelector(".modal");
   const modalBackdrop = document.querySelector(".modal-backdrop");
@@ -132,12 +133,11 @@ document.addEventListener("DOMContentLoaded", () => {
       wrapper.appendChild(flowerElement);
 
       flowerElement.addEventListener("click", () => {
-        console.log(flowerElement);
-
-        const flowerName = document.createElement("span");
-        flowerName.classList.add("flower-name");
         flowerName.textContent = flower.label;
-        flowerElement.appendChild(flowerName);
+
+        setTimeout(() => {
+          flowerName.style.display = "block";
+        }, 300);
 
         const flowerRect = flowerElement.getBoundingClientRect();
         const wrapperRect = wrapper.getBoundingClientRect();
@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         focus.style.width = `${flowerRect.width}px`;
         focus.style.height = `${flowerRect.height}px`;
+        focus.style.backgroundImage = 'url("images/focus-bold.png")';
         focus.style.top = `${top}px`;
         focus.style.left = `${left}px`;
         focus.style.transform = "none";
@@ -186,7 +187,6 @@ document.addEventListener("DOMContentLoaded", () => {
   roundEl.textContent = "1/3";
 
   const nextRound = () => {
-    document.querySelectorAll(".flower-name").forEach((el) => el.remove());
     if (round === 3) {
       const link = document.createElement("a");
       link.id = "click_area";
@@ -213,6 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     focus.style.top = "50%";
     focus.style.left = "50%";
     focus.style.transform = "translate(-50%, -50%)";
+    flowerName.style.display = "none";
 
     round++;
     roundEl.textContent = `${round}/3`;
@@ -221,7 +222,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const tryAgain = () => {
-    document.querySelectorAll(".flower-name").forEach((el) => el.remove());
     modal.classList.remove("show", "success", "error");
     modalBackdrop.classList.remove("show");
     modalTitle.classList.remove("error");
@@ -234,6 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     focus.style.top = "50%";
     focus.style.left = "50%";
     focus.style.transform = "translate(-50%, -50%)";
+    flowerName.style.display = "none";
   };
 
   loadRoundData();

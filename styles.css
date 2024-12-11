@@ -9,6 +9,37 @@
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @font-face {
   font-family: "YS Text Cond";
   font-weight: normal;
@@ -76,9 +107,10 @@
     background-size: auto;
     background-position: top center;
     top: 80%;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
     z-index: -10;
+    animation: scale 5s linear infinite;
   }
 }
 
@@ -144,42 +176,36 @@
       img {
         position: relative;
       }
-
-      .flower-name {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-25%, -25%);
-        background: #fff;
-        padding: 8px 20px;
-        border-radius: 25px;
-        border-top-left-radius: 2px;
-        font-family: "YS Text", sans-serif;
-        color: #2f2f32;
-        z-index: 4;
-      }
     }
 
     .round1 {
+      .flower {
+        animation: spin 10s linear infinite;
+      }
+
       .flower-1 {
         top: 5%;
         left: 5%;
       }
       .flower-2 {
-        top: -5%;
+        top: 7%;
         right: 0;
       }
       .flower-3 {
-        bottom: 5%;
+        bottom: 7%;
         left: 5%;
       }
       .flower-4 {
-        bottom: 0;
-        right: 0;
+        bottom: 5%;
+        right: 5%;
       }
     }
 
     .round2 {
+      .flower {
+        animation: shake 10s linear infinite;
+      }
+
       .flower-1 {
         top: 5%;
         left: -5%;
@@ -207,6 +233,10 @@
     }
 
     .round3 {
+      .flower {
+        animation: scale 5s linear infinite;
+      }
+
       .flower-1 {
         top: 5%;
         left: -5%;
@@ -237,6 +267,21 @@
       height: 350px;
       transition: all 0.3s ease;
       pointer-events: none;
+
+      .flower-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -25%);
+        background: #fff;
+        padding: 8px 20px;
+        border-radius: 25px;
+        border-top-left-radius: 2px;
+        font-family: "YS Text", sans-serif;
+        color: #2f2f32;
+        z-index: 4;
+        display: none;
+      }
     }
 
     .cursor {
