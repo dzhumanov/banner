@@ -260,12 +260,12 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("images/focus.png");
+      background-image: url("images/focus.svg");
       background-repeat: no-repeat;
       background-size: contain;
       width: 350px;
       height: 350px;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
       pointer-events: none;
 
       .flower-name {

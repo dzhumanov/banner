@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         focus.style.width = `${flowerRect.width}px`;
         focus.style.height = `${flowerRect.height}px`;
-        focus.style.backgroundImage = 'url("images/focus-bold.png")';
+        focus.style.backgroundImage = 'url("images/focus-bold.svg")';
         focus.style.top = `${top}px`;
         focus.style.left = `${left}px`;
         focus.style.transform = "none";
