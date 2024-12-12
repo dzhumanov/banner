@@ -165,6 +165,10 @@ document.addEventListener("DOMContentLoaded", () => {
             icon.classList.add("success");
             modalButton.classList.add("success");
             modalButton.textContent = "Следующий цветок";
+            if (round === 3) {
+              modalButton.textContent = "Попробовать";
+              modalButton.classList.add("btnFinal");
+            }
             modalButton.addEventListener("click", nextRound);
           } else {
             modal.classList.remove("success");
@@ -177,6 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
             icon.classList.add("error");
             modalButton.classList.add("error");
             modalButton.textContent = "Попробовать еще";
+            if (round === 3) {
+              modalButton.textContent = "Попробовать";
+              modalButton.classList.add("btnFinal");
+            }
             modalButton.addEventListener("click", tryAgain);
           }
         }, 1000);

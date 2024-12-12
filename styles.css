@@ -371,14 +371,31 @@
     font-weight: 500;
     margin-bottom: 50px;
     margin-top: 0 !important;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
   }
 
   .modal-button.success {
     background-color: #71a36d;
   }
 
+  .modal-button.success:hover {
+    background-color: #5a8458; /* Более тёмный оттенок для ховера */
+    transform: scale(1.05); /* Лёгкое увеличение */
+  }
+
   .modal-button.error {
     background-color: #d3523f;
+  }
+
+  .modal-button.error:hover {
+    background-color: #b74232; /* Более тёмный оттенок для ховера */
+    transform: scale(1.05); /* Лёгкое увеличение */
+  }
+
+  .btnFinal {
+    background: #fff !important;
+    color: #000;
   }
 }
 
